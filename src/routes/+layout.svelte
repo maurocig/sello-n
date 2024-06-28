@@ -13,7 +13,7 @@
 	];
 </script>
 
-<main class="h-full w-full">
+<main class="">
 	<slot />
 </main>
 
