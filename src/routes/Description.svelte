@@ -1,1 +1,1 @@
-<div class="h-[50vh] bg-red-500">Description section</div>
+<div class="h-[50vh] bg-[rgb(19,7,18)]">Description section</div>

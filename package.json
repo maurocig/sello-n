@@ -29,6 +29,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fontsource-variable/victor-mono": "^5.0.5",
 		"bits-ui": "^0.21.10",
 		"clsx": "^2.1.1",
 		"lucide-svelte": "^0.396.0",

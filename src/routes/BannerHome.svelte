@@ -11,3 +11,6 @@
 		<ChevronDownCircle size={50} strokeWidth={0.8} class="" />
 	</button>
 </div>
+
+<style>
+</style>
