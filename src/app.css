@@ -1,4 +1,7 @@
 @import '@fontsource-variable/victor-mono';
+@import '@fontsource/special-elite';
+@import '@fontsource/averia-serif-libre';
+@import '@fontsource-variable/jetbrains-mono';
 
 @tailwind base;
 @tailwind components;

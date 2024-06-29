@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/stores';
+	import { Shuffle, Volume, Volume1, VolumeX } from 'lucide-svelte';
 	import '../app.css';
 
 	const links = [
@@ -13,32 +14,40 @@
 	];
 </script>
 
-<main class="">
+<main class="h-full w-full">
 	<slot />
 </main>
 
 <nav
-	class="fixed bottom-0 z-50 flex h-[25vh] w-full items-center bg-gray-200/10 px-8 text-white backdrop-blur-sm md:h-[15vh] md:justify-between"
+	class="font-jetbrains fixed bottom-0 z-50 flex h-[25vh] w-full items-center px-8 font-thin text-white md:h-[15vh] md:justify-between lg:text-[1.7rem]"
 >
 	<ul
-		class="grid w-fit max-w-[600px] grid-cols-2 justify-between px-8 uppercase md:flex md:w-full md:justify-between md:gap-0 md:px-0"
+		class="grid max-w-[60vw] grid-cols-2 justify-between px-8 lowercase md:flex md:w-full md:justify-evenly md:gap-0 md:px-0"
 	>
 		{#each links as { name, href }}
-			<li class="px-6 py-2 font-victor md:px-0 md:py-0">
+			<li class="">
 				<a
 					{href}
-					class="opacity-50 transition hover:opacity-80"
-					aria-current={$page.url.pathname === href}>{name}</a
+					class="bg-black/70 px-4 py-2 opacity-50 transition hover:opacity-80"
+					aria-current={$page.url.pathname === href}><span>{name}</span></a
 				>
 			</li>
 		{/each}
 	</ul>
-	<div class="">sound</div>
+
+	<!-- controles playback -->
+	<div>
+		<button class="bg-black p-4 text-white/70"><Shuffle strokeWidth="1.5" size="32" /></button>
+		<button class="bg-black p-4 text-white/70"><VolumeX strokeWidth="1.5" size="32" /></button>
+	</div>
 </nav>
 
 <style>
 	a[aria-current='true'] {
-		opacity: 100;
-		filter: drop-shadow(0 0 0.6rem rgba(255, 255, 255, 0.4));
+		@apply bg-white/70 text-black opacity-100 shadow-inner transition duration-300 ease-in-out;
+	}
+
+	a[aria-current='true'] span {
+		filter: drop-shadow(0 0.1rem 0.1rem rgba(0, 0, 0, 0.4));
 	}
 </style>

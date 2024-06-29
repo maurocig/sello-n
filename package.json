@@ -29,7 +29,10 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fontsource-variable/jetbrains-mono": "^5.0.21",
 		"@fontsource-variable/victor-mono": "^5.0.5",
+		"@fontsource/averia-serif-libre": "^5.0.19",
+		"@fontsource/special-elite": "^5.0.12",
 		"bits-ui": "^0.21.10",
 		"clsx": "^2.1.1",
 		"lucide-svelte": "^0.396.0",

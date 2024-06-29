@@ -56,7 +56,10 @@ const config: Config = {
 			},
 			fontFamily: {
 				sans: [...fontFamily.sans],
-				victor: ['Victor Mono', ...fontFamily.mono]
+				victor: ['Victor Mono Variable', ...fontFamily.mono],
+				special: ['Special Elite', ...fontFamily.serif],
+				averi: ['Averia Serif Libre', ...fontFamily.serif],
+				jetbrains: ['JetBrains Mono Variable', ...fontFamily.mono]
 			}
 		}
 	}

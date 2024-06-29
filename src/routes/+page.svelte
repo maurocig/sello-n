@@ -18,7 +18,12 @@
 	<div
 		class="absolute h-full w-full bg-gradient-to-b from-rose-300/40 via-transparent to-black/60"
 	></div>
-	<h1 class="z-30 pt-[15vh] text-6xl text-white/80 drop-shadow-[0_0_0.8rem_black]">estrugamou</h1>
+	<!-- Título -->
+	<h1
+		class="font-jetbrains z-30 pt-[15vh] text-6xl font-thin tracking-tighter text-white/80 drop-shadow-[0_0_0.8rem_black]"
+	>
+		estrugamou
+	</h1>
 </section>
 
 <Description />
