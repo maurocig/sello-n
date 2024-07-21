@@ -8,13 +8,19 @@
 @tailwind utilities;
 
 @layer base {
+	input,
+	textarea {
+		@apply bg-white/20 text-red-500 placeholder:text-gray-700/50;
+	}
+
 	:root {
 		--video-gradient-color: rgba(0, 0, 0, 0.9);
 		--accent: #f9a826;
 	}
 
-	body, html {
-		@apply w-full h-full
+	body,
+	html {
+		@apply h-full w-full;
 	}
 
 	:root {

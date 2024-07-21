@@ -14,12 +14,26 @@
 	];
 </script>
 
-<main class="h-full w-full">
+<main class="h-full w-full border">
+	<video
+		muted
+		autoplay
+		loop
+		playsinline
+		disablepictureinpicture
+		class="absolute -z-10 h-full w-full object-cover"
+	>
+		<source src="/stills-2-15clip-webpages.m4v" type="video/mp4" />
+	</video>
+	<div class="to-emerald-930 video-gradient absolute h-full w-full"></div>
+	<div
+		class="absolute h-full w-full bg-gradient-to-b from-rose-300/40 via-transparent to-black/60"
+	></div>
 	<slot />
 </main>
 
 <nav
-	class="font-jetbrains fixed bottom-0 z-50 flex h-[25vh] w-full items-center px-8 font-thin text-white md:h-[15vh] md:justify-between lg:text-[1.7rem]"
+	class="fixed bottom-0 z-50 flex h-[25vh] w-full items-center px-8 font-jetbrains font-thin text-white md:h-[15vh] md:justify-between lg:text-[1.7rem]"
 >
 	<ul
 		class="grid max-w-[60vw] grid-cols-2 justify-between px-8 lowercase md:flex md:w-full md:justify-evenly md:gap-0 md:px-0"
