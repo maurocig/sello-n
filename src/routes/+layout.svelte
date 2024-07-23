@@ -1,13 +1,10 @@
 <script>
 	import { page } from '$app/stores';
-	import { Shuffle, Volume, Volume1, VolumeX } from 'lucide-svelte';
+	import { Shuffle, VolumeX } from 'lucide-svelte';
 	import '../app.css';
 
 	const links = [
 		{ name: 'Inicio', href: '/' },
-		// { name: 'Audiovisuales', href: '/audiovisuales' },
-		// { name: 'Composición', href: '/composicion' },
-		// { name: 'Producción', href: '/produccion' },
 		{ name: 'Portfolio', href: '/portfolio' },
 		{ name: 'Nosotros', href: '/nosotros' },
 		{ name: 'Contacto', href: '/contacto' }
