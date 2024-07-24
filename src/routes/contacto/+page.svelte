@@ -1,5 +1,5 @@
 <script>
-	import ContactForm from '$lib/components/ContactForm.svelte';
+	import ContactForm from './ContactForm.svelte';
 </script>
 
 <div class="flex h-full w-full justify-center">
