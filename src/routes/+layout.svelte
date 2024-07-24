@@ -11,7 +11,7 @@
 	];
 </script>
 
-<main class="h-full w-full border">
+<main class="h-full w-full">
 	<video
 		muted
 		autoplay

@@ -155,7 +155,7 @@
 							type="submit"
 							class={'w-full px-3 py-4 text-white ' +
 								(status
-									? status === 'Enviando...' || status === '¡Mensaje Enviado!'
+									? (status === 'Enviando...' || status === '¡Mensaje Enviado!')
 										? 'pointer-events-none cursor-not-allowed bg-green-400'
 										: 'bg-red-400'
 									: 'bg-gray-800')}
